@@ -1,0 +1,21 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml"
+]
+
+[window]
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+opacity = 0.8
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+
+[cursor]
+style = "Underline"
+vi_mode_style = "None"
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
