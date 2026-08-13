@@ -18,7 +18,7 @@ binds {
     Mod+D                               hotkey-overlay-title="Run an Application" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+B                               hotkey-overlay-title="Run Browser" { spawn "google-chrome-stable"; }
     Super+Alt+L                         hotkey-overlay-title="Lock the Screen" { spawn-sh "noctalia msg session lock"; }
-    Mod+Shift+Q                         hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
+    Mod+Shift+Q                         hotkey-overlay-title="Session Menu: noctalia session" { spawn-sh "noctalia msg panel-toggle session"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // For example, this is a standard bind to toggle the screen reader (orca).

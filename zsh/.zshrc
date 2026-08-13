@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 autoload -U compinit
 compinit
@@ -49,8 +49,10 @@ setopt share_history          # share command history data
 
 
 # fnm
-FNM_PATH="/home/minh/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
+if command -v fnm >/dev/null 2>&1; then
   eval "$(fnm env --shell zsh)"
 fi
+
+# Go
+export GOPATH="${GOPATH:-$HOME/go}"
+path=("$GOPATH/bin" $path)
