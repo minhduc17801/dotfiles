@@ -7,11 +7,14 @@ window-rule {
 }
 
 // Floating Noctalia settings window (v5).
+// draw-border-with-background false: focus ring/border must not fill behind
+// the translucent Settings window (otherwise active-color shows through).
 window-rule {
   match app-id="dev.noctalia.Noctalia"
   open-floating true
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
+  draw-border-with-background false
 }
 
 // Stationary wallpaper on the backdrop (Noctalia v5).

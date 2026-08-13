@@ -1,3 +1,2 @@
 spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5" "-d"
-spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
