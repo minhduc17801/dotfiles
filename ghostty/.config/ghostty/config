@@ -1,0 +1,26 @@
+# Migrated from Alacritty; colors come from Noctalia (`theme = noctalia`).
+
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+font-feature = calt,liga
+bold-color = bright
+minimum-contrast = 1.1
+
+background-opacity = 0.8
+background-blur = true
+
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+mouse-hide-while-typing = true
+
+theme = noctalia
+
+# Cursor trail: boo (https://github.com/hced/ghostty-cursor-trails)
+custom-shader = ./shaders/boo-cursor.glsl
+custom-shader-animation = always
