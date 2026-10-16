@@ -1,10 +1,12 @@
 environment {
   QT_QPA_PLATFORMTHEME "qt6ct"
+  XCURSOR_SIZE "28"
+  XCURSOR_THEME "Bibata-Modern-Classic"
 }
 
 cursor {
   xcursor-theme "Bibata-Modern-Classic"
-  xcursor-size 24
+  xcursor-size 28
 }
 
 prefer-no-csd
